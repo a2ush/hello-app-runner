@@ -3,6 +3,7 @@ runtime: python3
 build:
   commands:
     build:
+    - aws sts get-caller-identity
     - yum install -y pycairo
     - pip install -r requirements.txt
 run:
