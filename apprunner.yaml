@@ -4,6 +4,7 @@ build:
   commands:
     build:
     - aws sts get-caller-identity
+    - env
     - yum install -y pycairo
     - pip install -r requirements.txt
 run:
